@@ -1,0 +1,34 @@
+{
+  "name": "subject-identifiers",
+  "version": "1.0.0",
+  "description": "Typescript implementation of RFC 9493 Subject Identifiers for Security Event Tokens",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --project ./tsconfig.build.json",
+    "clean": "tsc --build --clean ./tsconfig.build.json && rm -rf ./dist",
+    "test": "node --test --import tsx $(find test -type f -name '*.test.ts')"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdkitzman/subject-identifiers.git"
+  },
+  "keywords": [
+    "rfc9493",
+    "subject",
+    "identifiers",
+    "typescript",
+    "node"
+  ],
+  "author": "Mike Kitzman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mdkitzman/subject-identifiers/issues"
+  },
+  "homepage": "https://github.com/mdkitzman/subject-identifiers#readme",
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}

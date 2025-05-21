@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2022",
+    "module": "commonjs",
+    "declaration": true,
+    "inlineSourceMap": true,
+    "noImplicitAny": false,
+    "strict": true
+  },
+  "include": ["lib", "test"]
+}
