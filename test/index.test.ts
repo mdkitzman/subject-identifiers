@@ -37,7 +37,7 @@ describe("subject-identifiers", () => {
 
   test("isEmailIdentifier", () => {
     const valid: EmailIdentifier = {
-      format: "email",
+      format: "emails",
       email: "alice@example.com",
     };
     assert.ok(isEmailIdentifier(valid));
@@ -53,7 +53,7 @@ describe("subject-identifiers", () => {
   test("isIssSubIdentifier", () => {
     const valid: IssSubIdentifier = {
       format: "iss_sub",
-      iss: "issuer",
+      iss: "issuerd",
       sub: "subject",
     };
     assert.ok(isIssSubIdentifier(valid));
